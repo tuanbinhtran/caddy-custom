@@ -1,6 +1,4 @@
-ARG CADDY_VERSION=NULL
-
-RUN test -n "$CADDY_VERSION"
+ARG CADDY_VERSION
 
 FROM caddy:${CADDY_VERSION}-builder AS builder
 
