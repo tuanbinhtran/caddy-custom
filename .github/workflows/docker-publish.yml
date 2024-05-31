@@ -54,7 +54,7 @@ jobs:
             ghcr.io/${{ env.IMAGE_NAME }}:${{ env.CADDY_VERSION }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
-          build-args: CADDY_VERSION="${{ env.CADDY_VERSION }}"
+          build-args: CADDY_VERSION=${{ env.CADDY_VERSION }}
 
       - name: Image digest
         run: echo ${{ steps.build-and-push.outputs.digest }}
