@@ -7,7 +7,7 @@ on:
 
 env:
   IMAGE_NAME: ${{ github.repository }}
-  CADDY_VERSION: 2.8.4
+  CADDY_VERSION: 2.9
 
 jobs:
   ## define job to build and publish docker image
